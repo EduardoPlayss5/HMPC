@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPC | Music Player</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mp4player">
+        <video id="mp4Player" class="hidden" controls src=""></video>
+        <button id="goBack" class="hidden">&lt;- Back</button>
+    </div>
+    <div class="player">
+        <div class="logo">
+            <i class="bx bx-music"></i>
+        </div>
+
+        <span id="musicName"></span>
+
+        <audio id="player" src=""></audio>
+        <div class="controls">
+            <button id="playPauseButton"><i class="bx bx-caret-right"></i></button>
+            <button id="loadMusicButton"><i class="bx bx-loader-circle"></i></button>
+        </div>
+
+        <div class="footer">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            <input type="file" id="fileInput" accept="video/mp4, audio/mp3"/>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
